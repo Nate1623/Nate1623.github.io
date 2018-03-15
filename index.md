@@ -8,4 +8,4 @@
 layout: home
 ---
 
-This is my page for CS 105 where I have posted my second Python project.
+I decided to use the fortune teller for my second python project.
