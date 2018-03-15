@@ -8,4 +8,4 @@
 layout: home
 ---
 
-Some home page content.
+This is my page for CS 105 where I have posted my second Python project.
