@@ -8,6 +8,6 @@
 layout: home
 ---
 
-I decided to use the fortune teller for my second python project. I used a function with multiple inputs to have custom fortunes. Depending on what the user inputs.
+Here is a picture of my dog for fun!
 
 ![a test image](CosmoFunny.jpg)
