@@ -2,22 +2,42 @@
 title: PythonI Project 
 layout: post
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+## Overview:
 
-Jekyll also offers powerful support for code snippets:
+This is just a guessing game that I created for the PythonI project.
 
+## Code:
 ```python
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+#Guess a number between 1-10 game
+
+#Function Library
+import random
+import sys
+import time
+
+#Tell the user to choose a number between 1-10
+print("Try to guess a number between 1-10!")
+userInput = int(input())
+
+#if the user chooses a number outside of the range quit the program
+if userInput >= 11 or userInput <= 0:
+  sys.exit("That isn't inbetween 1-10!")
+
+#print what the user typed in
+print("You chose the number, ", userInput)
+time.sleep(0.5)
+print(".")
+time.sleep(0.5)
+print(".")
+time.sleep(0.5)
+
+#declare a variable for the computer for a number between 1-10
+computerNum = random.randint(0,10)
+
+#Tell the user if they chose the right number
+if userInput == computerNum:
+    print("You guessed the right number!")
+else:
+    print("You guessed the wrong number..")
 ```
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
