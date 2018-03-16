@@ -10,7 +10,7 @@ This PythonII Project is a code that uses the application python to run a simple
 
 ## The code:
 
-```html
+```python
 #Fortune Teller
 
 #Function Library
